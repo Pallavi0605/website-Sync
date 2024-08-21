@@ -11,6 +11,7 @@ header nav {
   align-items: center;
   padding: 20px;
   background-color: #fff;
+  position: fixed;
 }
 
 nav ul {
@@ -74,12 +75,13 @@ footer {
   height: auto;
 }
 
+/*-------------------------------------navbar------------------------------------------------------*/
 .navbar {
   position: fixed; /* Fix the navbar at the bottom */
   bottom: 20px; /* Adjust this value to control the distance from the bottom */
   left: 50%; /* Center the navbar horizontally */
   transform: translateX(-50%); /* Corrects the centering by offsetting half the navbar's width */
-  background-color: #fff; /* White background */
+  background-color: #fff;  
   padding: 10px 30px; /* Adjust padding for space inside the navbar */
   border-radius: 30px; /* Rounded corners */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
@@ -89,23 +91,46 @@ footer {
 .navbar-list {
   display: flex;
   justify-content: center; /* Center the navbar items */
+  align-items: center; /* Vertically align items in the navbar */
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .navbar-item {
-  margin: 0 20px; /* Space between items */
+  margin: 0 10px; /* Space between items */
+  display: flex;
+  align-items: center; /* Center the button within the item */
 }
 
 .navbar-item a {
   text-decoration: none;
-  color: #2c3e50; /* Adjust text color */
+  color: #000408; /* Adjust text color */
   font-weight: bold;
   font-size: 16px; /* Adjust font size */
 }
 
 .navbar-item a:hover {
-  color: #ff6861; /* Highlight color on hover */
+  color: white; /* Highlight color on hover */
   transition: color 0.3s ease;
 }
+
+.navbar-item button {
+  border: none; /* Remove the border */
+  background: none; /* Remove any default background */
+  border-radius: 10px;
+  color: #000408; /* Adjust text color */
+  font-weight: bold;
+  font-size: 16px; /* Adjust font size */
+  padding: 10px 20px; /* Adjust padding for space around text */
+  cursor: pointer; /* Show pointer cursor on hover */
+  width: fit-content; /* Adjust width based on content */
+  height: auto; /* Allow height to adjust based on text */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-item button:hover {
+  background-color: #3eb2c9; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+

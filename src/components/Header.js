@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header-left">
-                <img src="/images/logo.png" alt="Techugo Logo" />
+                <img src="/images/logo.png" width={300} height={100} alt="Sync " />
             </div>
             <div className="header-right" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', backgroundColor: '#e3eef2', borderRadius: '30px' }}>
